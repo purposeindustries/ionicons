@@ -1,5 +1,26 @@
 # Ionicons
 
+## About this fork
+
+We generate js from each svg files.
+
+In your app you can do:
+
+```
+import iosCardIcon from 'ionicons-svg/ios-card';
+
+const div = document.createElement('div');
+div.innerHTML = iosCardIcon;
+document.body.appendChild(div);
+```
+
+If you want you can import all the svgs using:
+
+```
+const ionicons = require('ionicons-svg');
+
+ionicons['ios-card'] === require('ionicons-svg'); // true
+```
 
 Premium icons for [Ionic](http://ionicframework.com/). Designed by [@benjsperry](https://twitter.com/benjsperry).
 
