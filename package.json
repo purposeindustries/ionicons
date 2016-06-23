@@ -1,9 +1,19 @@
 {
-  "name": "ionicons",
-  "description": "Premium icons for Ionic.",
+  "name": "ionicons-embedded",
+  "description": "SVG icons embedded into js files",
   "version": "3.0.0-alpha.3",
-  "files": ["dist"],
-  "keywords": ["ionicons", "ionic", "icon", "svg", "font", "mobile"],
+  "files": [
+    "dist",
+    "js"
+  ],
+  "keywords": [
+    "ionicons",
+    "ionic",
+    "icon",
+    "svg",
+    "font",
+    "mobile"
+  ],
   "homepage": "http://ionicons.com/",
   "author": {
     "name": "Ben Sperry",
@@ -20,10 +30,17 @@
     "url": "https://github.com/driftyco/ionicons.git"
   },
   "bugs": {
-    "url" : "https://github.com/driftyco/ionicons/issues"
+    "url": "https://github.com/driftyco/ionicons/issues"
   },
   "license": "MIT",
-  "engines" : {
-    "node" : ">=0.10.3"
+  "engines": {
+    "node": ">=0.10.3"
+  },
+  "scripts": {
+    "generate-js-files": "node generate-js-files.js"
+  },
+  "devDependencies": {
+    "async-each-map": "^1.0.2",
+    "svgo": "^0.6.6"
   }
 }
