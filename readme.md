@@ -22,6 +22,13 @@ const ionicons = require('ionicons-svg');
 ionicons['ios-card'] === require('ionicons-svg'); // true
 ```
 
+Generating screenshot:
+
+```
+montage -label '%f' *.svg -tile 6x -geometry '128x128x16x16' icons.jpg
+```
+
+
 Premium icons for [Ionic](http://ionicframework.com/). Designed by [@benjsperry](https://twitter.com/benjsperry).
 
 Note: All brand icons are trademarks of their respective owners. The use of these trademarks does not indicate endorsement of the trademark holder by Drifty, nor vice versa.
