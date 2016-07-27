@@ -25,7 +25,7 @@ ionicons['ios-card'] === require('ionicons-svg'); // true
 Generating screenshot:
 
 ```
-montage -label '%f' *.svg -tile 6x -geometry '128x128x16x16' icons.jpg
+montage -label '%f' src/*.svg -tile 6x -geometry '128x128x16x16' icons.jpg
 ```
 
 
